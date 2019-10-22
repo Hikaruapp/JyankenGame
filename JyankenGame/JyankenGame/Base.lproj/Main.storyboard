@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JyankenGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="じゃんけん・ゲーム" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUC-SC-DBo" customClass="CustomLabel" customModule="JyankenGame" customModuleProvider="target">
+                                <rect key="frame" x="8" y="418" width="398" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0O3-fv-ysI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ga-1H-bpO" customClass="CustomButton" customModule="JyankenGame" customModuleProvider="target">
+                                <rect key="frame" x="143.5" y="508" width="127" height="127.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1ga-1H-bpO" secondAttribute="height" multiplier="1:1" id="qWe-Fm-eUq"/>
+                                </constraints>
+                                <state key="normal" image="Tyoki"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonTyoki:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8qd-zN-fxi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCR-oe-1RA" customClass="CustomButton" customModule="JyankenGame" customModuleProvider="target">
+                                <rect key="frame" x="278.5" y="508" width="127.5" height="127.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NCR-oe-1RA" secondAttribute="height" multiplier="1:1" id="YKU-iH-nlc"/>
+                                </constraints>
+                                <state key="normal" image="Pa"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonPa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AiA-B6-cHy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXN-nZ-hDH" customClass="CustomButton" customModule="JyankenGame" customModuleProvider="target">
+                                <rect key="frame" x="8" y="508" width="127.5" height="127.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EXN-nZ-hDH" secondAttribute="height" multiplier="1:1" id="PYy-MI-Dy0"/>
+                                </constraints>
+                                <state key="normal" image="Gu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonGu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="COM-UI-om0"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rD6-5B-rxf" customClass="CustomView" customModule="JyankenGame" customModuleProvider="target">
+                                <rect key="frame" x="143.5" y="230.5" width="127" height="127.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tc1-Xy-QdJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="127" height="127.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="tc1-Xy-QdJ" secondAttribute="bottom" id="EqK-uT-WxQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="tc1-Xy-QdJ" secondAttribute="trailing" id="Pjy-He-2b6"/>
+                                    <constraint firstAttribute="width" secondItem="rD6-5B-rxf" secondAttribute="height" multiplier="1:1" id="dkf-Rd-dUN"/>
+                                    <constraint firstItem="tc1-Xy-QdJ" firstAttribute="leading" secondItem="rD6-5B-rxf" secondAttribute="leading" id="jdQ-qu-cKY"/>
+                                    <constraint firstItem="tc1-Xy-QdJ" firstAttribute="top" secondItem="rD6-5B-rxf" secondAttribute="top" id="ltR-pV-xXK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7T-HE-Fek">
+                                <rect key="frame" x="8" y="643.5" width="398" height="210.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubc-pN-zkM" customClass="CustomButton" customModule="JyankenGame" customModuleProvider="target">
+                                        <rect key="frame" x="109.5" y="85.5" width="179" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="ジャンケンをする"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ii4-o0-tuc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="ubc-pN-zkM" firstAttribute="centerX" secondItem="S7T-HE-Fek" secondAttribute="centerX" id="mDs-Ff-0go"/>
+                                    <constraint firstItem="ubc-pN-zkM" firstAttribute="centerY" secondItem="S7T-HE-Fek" secondAttribute="centerY" id="mfe-Ym-V6m"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rD6-5B-rxf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CJf-Vs-sxe"/>
+                            <constraint firstItem="fUC-SC-DBo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Mf0-7z-ske"/>
+                            <constraint firstItem="1ga-1H-bpO" firstAttribute="top" secondItem="fUC-SC-DBo" secondAttribute="bottom" constant="30" id="OI7-O0-ewx"/>
+                            <constraint firstItem="EXN-nZ-hDH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="OVt-3z-y0z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NCR-oe-1RA" secondAttribute="trailing" constant="8" id="Oju-mP-oce"/>
+                            <constraint firstItem="fUC-SC-DBo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="P00-5C-h5f"/>
+                            <constraint firstItem="rD6-5B-rxf" firstAttribute="width" secondItem="1ga-1H-bpO" secondAttribute="width" id="PrZ-Gf-pi9"/>
+                            <constraint firstItem="fUC-SC-DBo" firstAttribute="top" secondItem="rD6-5B-rxf" secondAttribute="bottom" constant="60" id="SA1-PY-xZG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S7T-HE-Fek" secondAttribute="trailing" constant="8" id="SZ6-1b-y1U"/>
+                            <constraint firstItem="NCR-oe-1RA" firstAttribute="centerY" secondItem="1ga-1H-bpO" secondAttribute="centerY" id="TZ1-uJ-AWd"/>
+                            <constraint firstItem="1ga-1H-bpO" firstAttribute="leading" secondItem="EXN-nZ-hDH" secondAttribute="trailing" constant="8" id="X7m-l1-G4X"/>
+                            <constraint firstItem="1ga-1H-bpO" firstAttribute="centerY" secondItem="EXN-nZ-hDH" secondAttribute="centerY" id="dI9-Hv-rAI"/>
+                            <constraint firstItem="S7T-HE-Fek" firstAttribute="top" secondItem="1ga-1H-bpO" secondAttribute="bottom" constant="8" id="hPA-oh-6pY"/>
+                            <constraint firstItem="1ga-1H-bpO" firstAttribute="width" secondItem="EXN-nZ-hDH" secondAttribute="width" id="ie1-bO-ZE5"/>
+                            <constraint firstItem="S7T-HE-Fek" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="ism-TL-KeB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S7T-HE-Fek" secondAttribute="bottom" constant="8" id="jAC-bX-C7c"/>
+                            <constraint firstItem="NCR-oe-1RA" firstAttribute="width" secondItem="1ga-1H-bpO" secondAttribute="width" id="uBb-em-Bad"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fUC-SC-DBo" secondAttribute="trailing" constant="8" id="wLb-0u-ZX2"/>
+                            <constraint firstItem="NCR-oe-1RA" firstAttribute="leading" secondItem="1ga-1H-bpO" secondAttribute="trailing" constant="8" id="yUB-bI-6vT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonGU" destination="EXN-nZ-hDH" id="KuJ-BY-PXX"/>
+                        <outlet property="buttonPa" destination="NCR-oe-1RA" id="uWa-gK-4eo"/>
+                        <outlet property="buttonStart" destination="ubc-pN-zkM" id="w7F-cT-XKj"/>
+                        <outlet property="buttonTyoki" destination="1ga-1H-bpO" id="ObN-aR-cp5"/>
+                        <outlet property="cpJyankenImage" destination="tc1-Xy-QdJ" id="bGL-IC-1m2"/>
+                        <outlet property="jyankenmessage" destination="fUC-SC-DBo" id="O5I-Y3-R9l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Gu" width="120" height="115.5"/>
+        <image name="Pa" width="120" height="124"/>
+        <image name="Tyoki" width="120" height="147"/>
+    </resources>
+</document>
